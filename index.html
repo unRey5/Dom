@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/33ea1d9367.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>shopping list</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-regular fa-note-sticky"></i>
+            <h1 id="app-title">Shopping list</h1>
+        </header>
+
+        <form action="" id="item-form">
+            <div class="form-control">
+                <input type="text" class="form-input" id="item-input" name="item" placeholder="Enter item">
+            </div>
+        </form>
+    
+
+    <div class="form-control">
+        <button type="submit" class="btn">
+            <i class="fa-solid fa-plus"></i> Add item
+        </button>
+    </div>
+
+    <div class="filter">
+        <input type="text" class="form-input-filter" id="filter" placeholder="Filter items">
+    </div>
+
+    <ul id="item-list" class="items">
+        <li class="item">
+            Apples
+            <button class="remove-item btn-link text-red">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </li>
+        <li class="item">
+            Orange juice
+            <button class="remove-item btn-link text-red">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </li>
+        <li class="item">
+            Oreos
+            <button class="remove-item btn-link text-red">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </li>
+        <li class="item">
+            Milk
+            <button class="remove-item btn-link text-red">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </li>
+    </ul>
+
+    <button id="clear" class="btn-clear">
+        Clear all
+    </button>
+
+</div>
+
+<div class="container">
+    <h1>Traversing the Dom</h1>
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3</div>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -63,3 +63,21 @@ parent.children[1].innerText = 'Child Two';
 parent.firstElementChild.innerText = 'child One';
 
 console.log(output);
+
+//create and append.
+
+//you can create elements and add it anywhere in the document that you like using js create and append.
+
+const div = document.createElement('div');
+div.className = 'my-element';
+div.id = 'element-created';
+div.setAttribute('title', 'element');
+
+// div.innerText = 'Hello World';
+//innerText is really meant to get and change the content of an already existing element
+
+const text = document.createTextNode('Hello World');
+
+div.appendChild(text);
+
+console.log(div);

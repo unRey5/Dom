@@ -54,31 +54,31 @@
 
 //element nodes(every html on the page is an element node)
 
-const parent = document.querySelector('.parent');
+// const parent = document.querySelector('.parent');
 
-const output = parent.children[1].innerText;
+// const output = parent.children[1].innerText;
 
-parent.children[1].innerText = 'Child Two';
+// parent.children[1].innerText = 'Child Two';
 
-parent.firstElementChild.innerText = 'child One';
+// parent.firstElementChild.innerText = 'child One';
 
-console.log(output);
+// console.log(output);
 
 //create and append.
 
 //you can create elements and add it anywhere in the document that you like using js create and append.
 
-const div = document.createElement('div');
-div.className = 'my-element';
-div.id = 'element-created';
-div.setAttribute('title', 'element');
+// const div = document.createElement('div');
+// div.className = 'my-element';
+// div.id = 'element-created';
+// div.setAttribute('title', 'element');
 
 // div.innerText = 'Hello World';
 //innerText is really meant to get and change the content of an already existing element
 
-const text = document.createTextNode('Hello World');
+// const text = document.createTextNode('Hello World');
 
-div.appendChild(text);
+// div.appendChild(text);
 
 // document.body.appendChild(div);
 
@@ -99,25 +99,25 @@ div.appendChild(text);
 
 // console.log(list);
 
-function createItem(item) {
-    const li = document.createElement('li');
-    const tx = document.createTextNode(item);
-    li.appendChild(tx);
+// function createItem(item) {
+//     const li = document.createElement('li');
+//     const tx = document.createTextNode(item);
+//     li.appendChild(tx);
 
-    const button = document.createElement('button');
-    button.className = 'remove-item btn-link text-red';
-    const icon = document.createElement('i');
-    icon.className = 'fa-solid fa-xmark';
-    button.appendChild(icon);
+//     const button = document.createElement('button');
+//     button.className = 'remove-item btn-link text-red';
+//     const icon = document.createElement('i');
+//     icon.className = 'fa-solid fa-xmark';
+//     button.appendChild(icon);
 
-    li.appendChild(button);
+//     li.appendChild(button);
 
-    document.querySelector('ul').appendChild(li);
+//     document.querySelector('ul').appendChild(li);
 
 
-}
+// }
 
-createItem('Strawberry');
+// createItem('Strawberry');
 
 //insert elements into the dom
 
@@ -155,30 +155,30 @@ createItem('Strawberry');
 
 //replaceAllItems
 
-function replaceAllItems() {
-    const lis = document.querySelectorAll('li');
+// function replaceAllItems() {
+//     const lis = document.querySelectorAll('li');
 
-    lis.forEach((item, index) => {
+//     lis.forEach((item, index) => {
         // item.outerHTML = '<li>blaze</li>';
-        if (index === 1) {
-            item.textContent = 'cur';
-        } else {
-            item.outerHTML = '<li>blaze</li>';
-        }
-    });
+//         if (index === 1) {
+//             item.textContent = 'cur';
+//         } else {
+//             item.outerHTML = '<li>blaze</li>';
+//         }
+//     });
     
     
-}
-replaceAllItems();
+// }
+// replaceAllItems();
 
 // lis.forEach((item, index) => index === 1  ? item);
 
 //event listeners
 
-    const clear = document.querySelector('#clear');
+    // const clear = document.querySelector('#clear');
 
 
-function onClear() {
+// function onClear() {
     // const itemList = document.querySelector('ul');
     // const itemss = document.querySelectorAll('li');
     // console.log(alert('clear'));
@@ -186,7 +186,7 @@ function onClear() {
     // itemList.innerHTML = '';
 
     // itemss.forEach((items) => items.remove());
-}
+// }
 
 // clear.addEventListener('click', onClear);
 // setTimeout(() => clear.click(), 5000);
@@ -221,14 +221,14 @@ function onClear() {
 
 //mouse events
 
-const logo = document.querySelector('.fa-note-sticky');
+// const logo = document.querySelector('.fa-note-sticky');
 
-const onClick = () => console.log('click event');
-const onDoubleClick = () => console.log('Double click event');
+// const onClick = () => console.log('click event');
+// const onDoubleClick = () => console.log('Double click event');
 
-//event listeners
-logo.addEventListener('click', onClick);
-logo.addEventListener('dblclick', onDoubleClick);
+// //event listeners
+// logo.addEventListener('click', onClick);
+// logo.addEventListener('dblclick', onDoubleClick);
 
 
 //keyboard events
@@ -302,14 +302,29 @@ logo.addEventListener('dblclick', onDoubleClick);
 
 //form submission and form data object
 
-const form = document.getElementById('item-form');
+// const form = document.getElementById('item-form');
 
-function onSubmit(e) {
-    e.preventDefault();
-    console.log('submit');
-}
+// function onSubmit(e) {
+//     e.preventDefault();
+//     console.log('submit');
 
-form.addEventListener('submit', onSubmit);
+//     const item = document.getElementById('item-form').value;
+
+//     console.log(item); 
+// }
+
+
+// form.addEventListener('submit', onSubmit);
+
+
+// function onSubmit2(e) {
+//     e.preventDefault();
+
+//     const formData = new FormData(form);
+//     const item = formData.get('item');
+//     console.log(item);
+// }
+// form.addEventListener('submit', onSubmit2);
 
 
 

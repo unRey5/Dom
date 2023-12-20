@@ -54,15 +54,7 @@
 
 //element nodes(every html on the page is an element node)
 
-// const parent = document.querySelector('.parent');
-
-// const output = parent.children[1].innerText;
-
-// parent.children[1].innerText = 'Child Two';
-
-// parent.firstElementChild.innerText = 'child One';
-
-// console.log(output);
+// wo
 
 //create and append.
 
